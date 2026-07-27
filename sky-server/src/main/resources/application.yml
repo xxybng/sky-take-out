@@ -5,7 +5,7 @@ server:
   port: ${PORT} # 使用 Railway 分配的端口
 spring:
   profiles:
-    active: dev
+    active: del
   main:
     allow-circular-references: true
   datasource:

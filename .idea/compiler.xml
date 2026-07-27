@@ -7,8 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sky-common" />
-        <module name="sky-server" />
         <module name="sky-pojo" />
+      </profile>
+      <profile name="Annotation profile for sky-take-out" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="D:/fool/apache-maven-3.9.15/mvn_repo/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar" />
+        </processorPath>
+        <module name="sky-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="25" />
