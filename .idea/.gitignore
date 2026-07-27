@@ -8,5 +8,6 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+# Maven
 target/
 application-dev.yml
