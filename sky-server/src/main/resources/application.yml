@@ -7,10 +7,8 @@ spring:
 #  main:
 #    allow_circular_references: "true"
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
-    username: ${MYSQL_USER}
-    password: ${MYSQL_PASSWORD}
+    url:${MYSQL_URL}
+
 
 #  datasource:
 #    druid:
@@ -24,7 +22,7 @@ spring:
 #    host: ${REDIS_HOST}
 #    port: 6379
 #    password: ${REDIS_PASSWORD}
-#    database: ${REDIS_DATABASE:10}
+    database: ${REDIS_DATABASE:10}
 
 #    redis:
 #     host: ${sky.redis.host}
