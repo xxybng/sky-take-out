@@ -8,15 +8,15 @@ spring:
     allow-circular-references: true
   datasource:
     druid:
-      driver-class-name: ${sky.datasource.driver-class-name}
-      url: jdbc:mysql://${sky.datasource.host}:${sky.datasource.port}/${sky.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-      username: ${sky.datasource.username}
-      password: ${sky.datasource.password}
+      driver-class-name: ${datasource.driver-class-name}
+      url: jdbc:mysql://${datasource.host}:${datasource.port}/${datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ${datasource.username}
+      password: ${datasource.password}
   redis:
-    host: ${sky.redis.host}
-    port: ${sky.redis.port}
-    password: ${sky.redis.password}
-    database: ${sky.redis.database}
+    host: ${redis.host}
+    port: ${redis.port}
+    password: ${redis.password}
+    database: ${redis.database}
 
 mybatis:
   #mapper配置文件
@@ -46,20 +46,20 @@ sky:
     user-ttl: 7200000
     user-token-name: authentication
   alioss:
-    endpoint: ${sky.alioss.endpoint}
-    access-key-id: ${sky.alioss.access-key-id}
-    access-key-secret: ${sky.alioss.access-key-secret}
-    bucket-name: ${sky.alioss.bucket-name}
+    endpoint: ${alioss.endpoint}
+    access-key-id: ${alioss.access-key-id}
+    access-key-secret: ${alioss.access-key-secret}
+    bucket-name: ${alioss.bucket-name}
 #  wechat:
-#    appid: ${sky.wechat.appid}
-#    secret: ${sky.wechat.secret}
-#    mchid : ${sky.wechat.mchid}
-#    mchSerialNo: ${sky.wechat.mchSerialNo}
-#    privateKeyFilePath: ${sky.wechat.privateKeyFilePath}
-#    apiV3Key: ${sky.wechat.apiV3Key}
-#    weChatPayCertFilePath: ${sky.wechat.weChatPayCertFilePath}
-#    notifyUrl: ${sky.wechat.notifyUrl}
-#    refundNotifyUrl: ${sky.wechat.refundNotifyUrl}
+#    appid: ${wechat.appid}
+#    secret: ${wechat.secret}
+#    mchid : ${wechat.mchid}
+#    mchSerialNo: ${wechat.mchSerialNo}
+#    privateKeyFilePath: ${wechat.privateKeyFilePath}
+#    apiV3Key: ${wechat.apiV3Key}
+#    weChatPayCertFilePath: ${wechat.weChatPayCertFilePath}
+#    notifyUrl: ${wechat.notifyUrl}
+#    refundNotifyUrl: ${wechat.refundNotifyUrl}
   shop:
     address: 北京市海淀区上地十街10号
   baidu:
