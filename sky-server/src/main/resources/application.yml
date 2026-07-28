@@ -42,10 +42,10 @@ sky:
     user-ttl: 7200000
     user-token-name: authentication
   alioss:
-    alioss.endpoint=${ALIOSS_ENDPOINT:oss-cn-beijing.aliyuncs.com}
-    alioss.access-key-id=${ALIOSS_ACCESS_KEY_ID:}
-    alioss.access-key-secret=${ALIOSS_ACCESS_KEY_SECRET:}
-    alioss.bucket-name=${ALIOSS_BUCKET_NAME:}
+    endpoint=${ALIOSS_ENDPOINT:oss-cn-beijing.aliyuncs.com}
+    access-key-id=${ALIOSS_ACCESS_KEY_ID:}
+    access-key-secret=${ALIOSS_ACCESS_KEY_SECRET:}
+    bucket-name=${ALIOSS_BUCKET_NAME:}
 #  wechat:
 #    appid: ${wechat.appid}
 #    secret: ${wechat.secret}
