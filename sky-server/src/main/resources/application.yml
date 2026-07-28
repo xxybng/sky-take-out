@@ -10,10 +10,10 @@ spring:
 
   redis:
     url: ${REDIS_URL}
-    host: ${REDIS_HOST}
-    port: ${REDIS_PORT}
-    password: ${REDIS_PASSWORD}
-    database: ${REDIS_DATABASE:0}
+#    host: ${REDIS_HOST}
+#    port: ${REDIS_PORT}
+#    password: ${REDIS_PASSWORD}
+    database: ${REDIS_DATABASE:10}
 
 mybatis:
   #mapper配置文件
