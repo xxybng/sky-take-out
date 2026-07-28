@@ -1,9 +1,9 @@
 server:
   port: 8080
 
-spring:
-  profiles:
-    active: del
+#spring:
+#  profiles:
+#    active: del
 #  main:
 #    allow_circular_references: "true"
   datasource:
