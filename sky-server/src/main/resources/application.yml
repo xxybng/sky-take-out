@@ -1,11 +1,12 @@
 server:
   port: 8080
 
-spring:
+#spring:
 #  profiles:
 #    active: del
 #  main:
 #    allow_circular_references: "true"
+spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
