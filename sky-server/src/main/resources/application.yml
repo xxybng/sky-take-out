@@ -2,18 +2,35 @@ server:
   port: 8080
 
 spring:
+  profiles:
+    active: del
+#  main:
+#    allow_circular_references: "true"
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
     username: ${MYSQL_USER}
     password: ${MYSQL_PASSWORD}
 
+#  datasource:
+#    druid:
+#      driver-class-name: ${sky.datasource.driver-class-name}
+#      url: jdbc:mysql://${sky.datasource.host}:${sky.datasource.port}/${sky.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+#      username: ${sky.datasource.username}
+#      password: ${sky.datasource.password}
+
   redis:
-    url: ${REDIS_URL}
-#    host: ${REDIS_HOST}
-#    port: ${REDIS_PORT}
-#    password: ${REDIS_PASSWORD}
+#    url: ${REDIS_URL}
+    host: ${REDIS_HOST}
+    port: 6379
+    password: ${REDIS_PASSWORD}
     database: ${REDIS_DATABASE:10}
+
+#    redis:
+#     host: ${sky.redis.host}
+#     port: ${sky.redis.port}
+#     password: ${sky.redis.password}
+#     database: ${sky.redis.database}
 
 mybatis:
   #mapper配置文件
@@ -61,3 +78,4 @@ sky:
     address: 北京市海淀区上地十街10号
   baidu:
     ak: your-ak
+
