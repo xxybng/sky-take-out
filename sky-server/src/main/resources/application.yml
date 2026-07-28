@@ -20,11 +20,11 @@ spring:
 #      password: ${sky.datasource.password}
 
   redis:
-#    url: ${REDIS_URL}
-    host: ${REDIS_HOST}
-    port: 6379
-    password: ${REDIS_PASSWORD}
-    database: ${REDIS_DATABASE:10}
+    url: ${REDIS_URL}
+#    host: ${REDIS_HOST}
+#    port: 6379
+#    password: ${REDIS_PASSWORD}
+#    database: ${REDIS_DATABASE:10}
 
 #    redis:
 #     host: ${sky.redis.host}
